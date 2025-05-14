@@ -1,0 +1,40 @@
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲ function factorial(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial(n - 1);
+}
+
+function defined
+
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲ फलन फैक्टोरियल(न) {
+    अगर (न <= 1) {
+        वापस 1;
+    }
+    वापस न * फैक्टोरियल(न - 1);
+}
+
+function defined
+
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲ কাৰ্য্য ফেক্টৰিয়েল(ন) {
+    যদি (ন <= 1) {
+        ঘূৰাই_দিয়ক 1;
+    }
+    ঘূৰাই_দিয়ক ন * ফেক্টৰিয়েল(ন - 1);
+}
+
+function defined
+
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲ factorial(5)
+
+120
+
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲ फैक्टोरियल(5)
+
+120
+
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲ ফেক্টৰিয়েল(5)
+
+120
+
+t̲r̲i̲b̲h̲a̲s̲h̲a̲>̲
