@@ -1,0 +1,104 @@
+// त्रिभाषा Calculator Example
+// This program demonstrates a simple calculator in three languages
+
+// English implementation
+function add_en(a, b) {
+    return a + b;
+}
+
+function subtract_en(a, b) {
+    return a - b;
+}
+
+function multiply_en(a, b) {
+    return a * b;
+}
+
+function divide_en(a, b) {
+    if (b == 0) {
+        print("Error: Division by zero");
+        return 0;
+    }
+    return a / b;
+}
+
+// Hindi implementation
+फलन जोड़_hi(a, b) {
+    वापस a + b;
+}
+
+फलन घटाव_hi(a, b) {
+    वापस a - b;
+}
+
+फलन गुणा_hi(a, b) {
+    वापस a * b;
+}
+
+फलन भाग_hi(a, b) {
+    अगर (b == 0) {
+        दिखाओ("त्रुटि: शून्य से विभाजन");
+        वापस 0;
+    }
+    वापस a / b;
+}
+
+// Assamese implementation
+কাৰ্য্য যোগ_as(a, b) {
+    ঘূৰাই_দিয়ক a + b;
+}
+
+কাৰ্য্য বিয়োগ_as(a, b) {
+    ঘূৰাই_দিয়ক a - b;
+}
+
+কাৰ্য্য গুণন_as(a, b) {
+    ঘূৰাই_দিয়ক a * b;
+}
+
+কাৰ্য্য বিভাজন_as(a, b) {
+    যদি (b == 0) {
+        দেখুৱাওক("ত্ৰুটি: শূন্যৰে বিভাজন");
+        ঘূৰাই_দিয়ক 0;
+    }
+    ঘূৰাই_দিয়ক a / b;
+}
+
+// Calculator main in mixed languages
+function main() {
+    // English operations
+    var a = 10;
+    var b = 5;
+    
+    print("---- English Calculator ----");
+    print(a + " + " + b + " = " + add_en(a, b));
+    print(a + " - " + b + " = " + subtract_en(a, b));
+    print(a + " * " + b + " = " + multiply_en(a, b));
+    print(a + " / " + b + " = " + divide_en(a, b));
+    
+    // Hindi operations
+    चर क = 20;
+    चर ख = 4;
+    
+    दिखाओ("---- हिंदी कैलकुलेटर ----");
+    दिखाओ(क + " + " + ख + " = " + जोड़_hi(क, ख));
+    दिखाओ(क + " - " + ख + " = " + घटाव_hi(क, ख));
+    दिखाओ(क + " * " + ख + " = " + गुणा_hi(क, ख));
+    दिखाओ(क + " / " + ख + " = " + भाग_hi(क, ख));
+    
+    // Assamese operations
+    ভেৰিয়েবল ক = 30;
+    ভেৰিয়েবল খ = 6;
+    
+    দেখুৱাওক("---- অসমীয়া কেলকুলেটৰ ----");
+    দেখুৱাওক(ক + " + " + খ + " = " + যোগ_as(ক, খ));
+    দেখুৱাওক(ক + " - " + খ + " = " + বিয়োগ_as(ক, খ));
+    দেখুৱাওক(ক + " * " + খ + " = " + গুণন_as(ক, খ));
+    দেখুৱাওক(ক + " / " + খ + " = " + বিভাজন_as(ক, খ));
+    
+    // Mixed language operations
+    var result = add_en(जोड़_hi(10, 20), যোগ_as(5, 15));
+    print("Mixed operation result: " + result);
+    
+    return 0;
+}

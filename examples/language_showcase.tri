@@ -1,0 +1,141 @@
+// त्रिभाषा (Tribhasha) Language Showcase
+// This example demonstrates all the key language features across all three languages
+
+// ===== English Syntax =====
+
+// Variable declaration
+var english_var = 100;
+
+// Function declaration
+function add_two_numbers(a, b) {
+    return a + b;
+}
+
+// Conditional statements
+function check_number(n) {
+    if (n > 0) {
+        return "Positive";
+    } else if (n < 0) {
+        return "Negative";
+    } else {
+        return "Zero";
+    }
+}
+
+// Loops
+function count_to_ten() {
+    var i = 1;
+    while (i <= 10) {
+        print(i);
+        i = i + 1;
+    }
+}
+
+function countdown(n) {
+    for (var i = n; i >= 0; i = i - 1) {
+        print(i);
+    }
+}
+
+// ===== Hindi Syntax =====
+
+// Variable declaration
+चर हिंदी_चर = 200;
+
+// Function declaration
+फलन दो_संख्या_जोड़ें(a, b) {
+    वापस a + b;
+}
+
+// Conditional statements
+फलन संख्या_जांच(न) {
+    अगर (न > 0) {
+        वापस "धनात्मक";
+    } अन्यथा अगर (न < 0) {
+        वापस "ऋणात्मक";
+    } अन्यथा {
+        वापस "शून्य";
+    }
+}
+
+// Loops
+फलन दस_तक_गिनती() {
+    चर i = 1;
+    जबतक (i <= 10) {
+        दिखाओ(i);
+        i = i + 1;
+    }
+}
+
+फलन उलटी_गिनती(न) {
+    के_लिए (चर i = न; i >= 0; i = i - 1) {
+        दिखाओ(i);
+    }
+}
+
+// ===== Assamese Syntax =====
+
+// Variable declaration
+ভেৰিয়েবল অসমীয়া_ভেৰ = 300;
+
+// Function declaration
+কাৰ্য্য দুটা_সংখ্যা_যোগ(a, b) {
+    ঘূৰাই_দিয়ক a + b;
+}
+
+// Conditional statements
+কাৰ্য্য সংখ্যা_পৰীক্ষা(ন) {
+    যদি (ন > 0) {
+        ঘূৰাই_দিয়ক "ধনাত্মক";
+    } নহলে যদি (ন < 0) {
+        ঘূৰাই_দিয়ক "ঋণাত্মক";
+    } নহলে {
+        ঘূৰাই_দিয়ক "শূন্য";
+    }
+}
+
+// Loops
+কাৰ্য্য দহলৈ_গণনা() {
+    ভেৰিয়েবল i = 1;
+    যতক্ষণ (i <= 10) {
+        দেখুৱাওক(i);
+        i = i + 1;
+    }
+}
+
+কাৰ্য্য উল্টা_গণনা(ন) {
+    ৰ_বাবে (ভেৰিয়েবল i = ন; i >= 0; i = i - 1) {
+        দেখুৱাওক(i);
+    }
+}
+
+// ===== Mixed Language Main =====
+function main() {
+    // Using English functions
+    print("===== English Functions =====");
+    print("Add: " + add_two_numbers(5, 3));
+    print("Number check: " + check_number(42));
+    
+    // Using Hindi functions
+    print("===== Hindi Functions =====");
+    print("Add: " + दो_संख्या_जोड़ें(10, 20));
+    print("Number check: " + संख्या_जांच(-7));
+    
+    // Using Assamese functions
+    print("===== Assamese Functions =====");
+    print("Add: " + দুটা_সংখ্যা_যোগ(15, 25));
+    print("Number check: " + সংখ্যা_পৰীক্ষা(0));
+    
+    // Mixed language calculation
+    print("===== Mixed Language Calculation =====");
+    var result = add_two_numbers(दो_संख्या_जोड़ें(5, 10), দুটা_সংখ্যা_যোগ(15, 20));
+    print("Result: " + result);
+    
+    // Multilingual variable access
+    print("===== Variables =====");
+    print("English: " + english_var);
+    print("Hindi: " + हिंदी_चर);
+    print("Assamese: " + অসমীয়া_ভেৰ);
+    
+    return 0;
+}

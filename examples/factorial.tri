@@ -1,0 +1,44 @@
+// त्रिभाषा Example: Factorial calculation in three languages
+
+// English version
+function factorial_en(n) {
+    if (n <= 1) {
+        return 1;
+    }
+    return n * factorial_en(n - 1);
+}
+
+// Hindi version
+फलन फैक्टोरियल_hi(न) {
+    अगर (न <= 1) {
+        वापस 1;
+    }
+    वापस न * फैक्टोरियल_hi(न - 1);
+}
+
+// Assamese version
+কাৰ্য্য ফেক্টৰিয়েল_as(ন) {
+    যদি (ন <= 1) {
+        ঘূৰাই_দিয়ক 1;
+    }
+    ঘূৰাই_দিয়ক ন * ফেক্টৰিয়েল_as(ন - 1);
+}
+
+// Mixed language main program
+function main() {
+    var n = 5;
+    
+    // Calculate using English function
+    var result_en = factorial_en(n);
+    print("Factorial of " + n + " (English): " + result_en);
+    
+    // Calculate using Hindi function
+    चर परिणाम_hi = फैक्टोरियल_hi(n);
+    दिखाओ(n + " का फैक्टोरियल (हिंदी): " + परिणाम_hi);
+    
+    // Calculate using Assamese function
+    ভেৰিয়েবল ফলাফল_as = ফেক্টৰিয়েল_as(n);
+    দেখুৱাওক(n + " ৰ ফেক্টৰিয়েল (অসমীয়া): " + ফলাফল_as);
+    
+    return 0;
+}
